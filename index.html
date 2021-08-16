@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assest/css/icon.css">
+    <script src="https://kit.fontawesome.com/4bdae2f90f.js" crossorigin="anonymous"></script>
+
+    <title>Rock, Paper, Scissor</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="scores">
+            <p class="computer">Computer: <span class="com_scores" id="com-score">0</span></p>
+            <p class="user">You: <span class="user_scores" id="user-score">0</span></p>
+        </div>
+
+        <div class="user_choice">
+            <button onclick="checker('rock')">
+                <i class="far fa-hand-rock"></i>
+            </button>
+
+            <button onclick = "checker('paper')">
+                <i class="far fa-hand-paper"></i>
+            </button>
+
+            <button onclick = "checker('scissors')">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+
+        <div class="results">
+            <p class="user_results" id="user-result"></p>
+            <p class="computer_results" id="com-result"></p>
+            <p id="final-result"></p>
+            
+        </div>
+    </div>
+
+
+    <script src="assests/js/main.js"></script>
+</body>
+</html>

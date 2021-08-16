@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(145deg, #cf1020, #ff4500);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 400px;
+    margin: 25% auto;
+    background-color: aliceblue;
+    padding: 40px 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 17px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    
+}
+
+.scores{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.user_choice{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+
+}
+.user_choice button{
+    border: none;
+    outline: none;
+    font-size: 50px;
+    background-color: #cf1020;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.user_result, .computer_result, .com_scores, .user_scores{
+    font-weight: 600;
+}
+
+.result_dec{
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
